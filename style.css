@@ -23,7 +23,6 @@ CSS STRUCTURE:
 --------------------------------------------------------------*/
 :root,
 [data-bs-theme=light] {
-  --background-image: url('images/background.jpg');
   --heading-font: "Roboto", Verdana, serif;
   --heading-font-weight: 700;
   --heading-color: var(--bs-dark);
@@ -100,7 +99,7 @@ a {
 }
 
 .element-class {
-  background-image: var(--background-image);
+  background-image: url('images/background.jpg');
   background-size: cover;
   background-position: center;
 }
