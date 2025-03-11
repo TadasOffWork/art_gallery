@@ -23,6 +23,7 @@ CSS STRUCTURE:
 --------------------------------------------------------------*/
 :root,
 [data-bs-theme=light] {
+  --background-image: url('images/background.jpg');
   --heading-font: "Roboto", Verdana, serif;
   --heading-font-weight: 700;
   --heading-color: var(--bs-dark);
@@ -96,6 +97,12 @@ h6,
 a {
   text-decoration: none;
   transition: all 0.3s ease-out;
+}
+
+.element-class {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Dropdown */
@@ -233,23 +240,6 @@ a {
   --bs-body-bg-rgb: 17, 17, 41;
 
   color: var(--bs-gray);
-}
-
-body {
-  background-image: url('images/background.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-  background-size: 100% auto;
-  background-position: center;
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-  }
 }
 
 [data-bs-theme=dark] .dropdown-item {
